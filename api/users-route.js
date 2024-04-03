@@ -10,7 +10,7 @@ module.exports = (app) => {
 
   // Get list of users
   route.get('/', async (req, res) => {
-    const userData = await User.find();
+    // const userData = await User.find();
     return res.status(200).json(usersList);
     // const users = generateUsers();
     // return response.status(200).json(users);

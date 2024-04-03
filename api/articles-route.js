@@ -9,7 +9,7 @@ module.exports = (app) => {
     const articleList = [];
 
     route.get('/', async (req, res) => {
-        const articleData = await Article.find();
+        // const articleData = await Article.find();
         return res.status(200).json(articleList);
     });
 
